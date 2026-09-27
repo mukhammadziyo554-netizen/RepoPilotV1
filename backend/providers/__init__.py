@@ -1,4 +1,4 @@
-"""Analysis-provider boundary. Anthropic is the only active provider today."""
+"""Analysis-provider boundary. Supports Anthropic (API-based) and IBM Bob (CLI-based, local only)."""
 
 from .base import (
     AnalysisProvider,
