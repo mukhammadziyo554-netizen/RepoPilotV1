@@ -1,0 +1,15 @@
+import os
+
+
+GITHUB_API_URL = "https://api.github.com"
+REQUEST_TIMEOUT = (5, 25)
+MAX_TREE_ENTRIES = 100_000
+MAX_RETRIEVED_FILES = 24
+MAX_FILE_BYTES = 60_000
+MAX_TOTAL_SOURCE_BYTES = 500_000
+MAX_CONVERSATION_CONTEXTS = 12
+MAX_CONVERSATION_SOURCE_FILES = 48
+
+
+def github_token() -> str:
+    return os.getenv("GITHUB_TOKEN", "").strip()
